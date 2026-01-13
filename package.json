@@ -1,0 +1,14 @@
+{
+  "name": "com.mka.assets",
+  "version": "0.0.1",
+  "displayName": "MKA Assets",
+  "description": "Assorted utilities and assets collected over the years that have proven useful",
+  "documentationUrl": "https://github.com/martkartasev/MKA-Assets",
+  "changelogUrl": "https://github.com/martkartasev/MKA-Assets",
+  "licensesUrl": "https://github.com/martkartasev/MKA-Assets",
+  "author": {
+    "name": "Mart Kartasev",
+    "email": "mart.kartasev@gmail.com",
+    "url": "https://www.linkedin.com/in/mart-karta%C5%A1ev-a67410114/"
+  }
+}
