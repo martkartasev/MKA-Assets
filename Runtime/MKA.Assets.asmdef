@@ -1,9 +1,7 @@
 {
     "name": "MKA.Assets",
     "rootNamespace": "",
-    "references": [
-       
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": true,
