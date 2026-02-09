@@ -16,7 +16,7 @@ namespace Scripts.Utils
 
             return returnList;
         }
-        
+
         public static List<GameObject> FindAllChildrenWithTag(this Transform item, String tag)
         {
             var objects = new List<GameObject>();
@@ -28,6 +28,23 @@ namespace Scripts.Utils
                 }
 
                 objects.AddRange(child.FindAllChildrenWithTag(tag));
+            }
+
+            return objects;
+        }
+
+        public static List<T> FindAllChildrenWithComponent<T>(this Transform item)
+        {
+            var objects = new List<T>();
+            foreach (Transform child in item)
+            {
+                var component = child.GetComponent<T>();
+                if (component != null)
+                {
+                    objects.Add(component);
+                }
+
+                objects.AddRange(child.FindAllChildrenWithComponent<T>());
             }
 
             return objects;
